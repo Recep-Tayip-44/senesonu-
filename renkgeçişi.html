@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="renkgeçişi.css">
+    <style>
+      body{
+        height: 100vh;
+        display: flex;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+      }
+      .box{
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        transition: all 3s ease-in;
+      }
+      .box:hover{
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        transform: rotate(300px,300px); 
+        border-radius: 100px;
+        
+      }
+
+
+    </style>
+</head>
+<body>
+    <header><div class="box"></div></header>
+</body>
+</html>

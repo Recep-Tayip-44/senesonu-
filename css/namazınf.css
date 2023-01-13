@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      width: 97vw;
+      background-color: rgb(250, 250, 250);
+      gap: 1vh;
+      height: 200vh;
+      display: grid;
+      grid-template-areas: 
+      "header header header header"
+      "nav nav nav nav"
+      "section aside aside article"
+      "section aside aside article"
+      "footer footer footer footer"
+      ;
+    }
+    header{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 15vh;
+     grid-area: header;
+     border: thin solid black;
+     
+    }
+    nav{
+     
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(248, 248, 248);
+     grid-area: nav;
+     border: thin solid rgb(255, 255, 255);
+     display: flex;
+     gap: 20px;
+     height: 10vh;
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    ul#main li {
+      float: left;
+      position: relative;
+      width: 158px;
+    }
+    ul#main li ul{
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 40px;
+    }
+    ul li a{
+      display: block;
+      width: 195px;
+      height: 40px;
+      line-height: 40px;
+      background-color: green;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+    }
+    ul li a:hover{
+     
+      background-color: rgb(33, 193, 33);
+    }
+    ul#main li:hover ul{
+      display: block;
+    }
+  
+  
+  
+    
+    section{
+      width: 15vw;
+      background-color: rgb(255, 255, 255);
+      height: 80vh;
+     grid-area: section;
+     border: thin solid black;
+    }
+    article{
+      width: 15vw;
+      background-color: rgb(255, 255, 255);
+      height: 80vh;
+     grid-area: article;
+     border: thin solid black;
+    }
+    aside{
+      
+      width: 51vw;
+      background-color: rgb(255, 255, 255);
+      height: 155vh;
+      grid-area: aside;
+      border: thin solid black;
+      overflow: scroll;
+    }
+    aside h2{
+      text-align: center;
+      color: blueviolet;
+    }
+    aside h3{
+      color: green;
+    }
+    aside h1{
+      color: rgb(213, 11, 11);
+      text-align: center;
+    }
+    footer{
+      background-color: rgb(255, 255, 255);
+      height: 20vh;
+      grid-area: footer;
+      border: thin solid black;
+    }
